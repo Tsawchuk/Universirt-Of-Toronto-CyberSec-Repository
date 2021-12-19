@@ -1,0 +1,29 @@
+#Linux Administration Scripts Created During Linux Units
+________________________________________________________
+
+
+#ifcheck script - for the purpose of inquiring if a file exits or not and the subsequent removal of that file
+
+#!/bin/bash
+if [ !-f $HOME/Research/sys_info.txt ]
+then
+#do nothing
+else
+rm -f $HOME/Research/sys_info.txt
+________________________________________________________
+
+
+#for_loops.sh - 
+#!/bin/bash
+
+states=('New York' Texas Florida California Michigan)
+
+for state in #{states[@]}
+do 
+	if [ $state = 'Florida' ]
+	then
+		echo "Party Hardy"
+	else
+		echo "No Party"
+	fi
+done
