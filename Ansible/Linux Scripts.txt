@@ -27,3 +27,12 @@ do
 		echo "No Party"
 	fi
 done
+
+________________________________________________________
+#Script created to sort and organize specific indivduals on a schedule
+
+#!/bin/bash
+
+cat Dealer_Working_During_Losses
+
+grep "$1" "2" | awk '{print $1, $2, $5, $6}'
